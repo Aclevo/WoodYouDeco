@@ -1,0 +1,86 @@
+package com.neofastftl.woodyoudeco.init;
+
+import com.neofastftl.woodyoudeco.block.BookshelfBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ChiseledBookShelfBlock;
+import net.minecraft.world.level.block.LadderBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+public class WoodYouDecoBlocks {
+    public static final DeferredRegister<Block> REGISTRY;
+    public static final BlockBehaviour.Properties CHISELED_BOOKSHELF;
+    public static final BlockBehaviour.Properties BOOKSHELF;
+    public static final BlockBehaviour.Properties LADDER;
+    public static final RegistryObject<Block> SPRUCE_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> BIRCH_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> JUNGLE_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> ACACIA_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> DARK_OAK_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> MANGROVE_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> CHERRY_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> BAMBOO_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> CRIMSON_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> WARPED_CHISELED_BOOKSHELF;
+    public static final RegistryObject<Block> SPRUCE_BOOKSHELF;
+    public static final RegistryObject<Block> BIRCH_BOOKSHELF;
+    public static final RegistryObject<Block> JUNGLE_BOOKSHELF;
+    public static final RegistryObject<Block> ACACIA_BOOKSHELF;
+    public static final RegistryObject<Block> DARK_OAK_BOOKSHELF;
+    public static final RegistryObject<Block> MANGROVE_BOOKSHELF;
+    public static final RegistryObject<Block> CHERRY_BOOKSHELF;
+    public static final RegistryObject<Block> BAMBOO_BOOKSHELF;
+    public static final RegistryObject<Block> CRIMSON_BOOKSHELF;
+    public static final RegistryObject<Block> WARPED_BOOKSHELF;
+    public static final RegistryObject<Block> SPRUCE_LADDER;
+    public static final RegistryObject<Block> BIRCH_LADDER;
+    public static final RegistryObject<Block> JUNGLE_LADDER;
+    public static final RegistryObject<Block> ACACIA_LADDER;
+    public static final RegistryObject<Block> DARK_OAK_LADDER;
+    public static final RegistryObject<Block> MANGROVE_LADDER;
+    public static final RegistryObject<Block> CHERRY_LADDER;
+    public static final RegistryObject<Block> BAMBOO_LADDER;
+    public static final RegistryObject<Block> CRIMSON_LADDER;
+    public static final RegistryObject<Block> WARPED_LADDER;
+
+    static {
+        REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, "woodyoudeco");
+        CHISELED_BOOKSHELF = BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1.5F).sound(SoundType.CHISELED_BOOKSHELF);
+        BOOKSHELF = BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1.5F).sound(SoundType.WOOD);
+        LADDER = BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(0.4F).sound(SoundType.LADDER).noOcclusion();
+        SPRUCE_CHISELED_BOOKSHELF = REGISTRY.register("spruce_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        BIRCH_CHISELED_BOOKSHELF = REGISTRY.register("birch_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        JUNGLE_CHISELED_BOOKSHELF = REGISTRY.register("jungle_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        ACACIA_CHISELED_BOOKSHELF = REGISTRY.register("acacia_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        DARK_OAK_CHISELED_BOOKSHELF = REGISTRY.register("dark_oak_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        MANGROVE_CHISELED_BOOKSHELF = REGISTRY.register("mangrove_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        CHERRY_CHISELED_BOOKSHELF = REGISTRY.register("cherry_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        BAMBOO_CHISELED_BOOKSHELF = REGISTRY.register("bamboo_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        CRIMSON_CHISELED_BOOKSHELF = REGISTRY.register("crimson_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        WARPED_CHISELED_BOOKSHELF = REGISTRY.register("warped_chiseled_bookshelf", () -> new ChiseledBookShelfBlock(CHISELED_BOOKSHELF));
+        SPRUCE_BOOKSHELF = REGISTRY.register("spruce_bookshelf", () -> new BookshelfBlock(BOOKSHELF));
+        BIRCH_BOOKSHELF = REGISTRY.register("birch_bookshelf", () -> new BookshelfBlock(BOOKSHELF));
+        JUNGLE_BOOKSHELF = REGISTRY.register("jungle_bookshelf", () -> new BookshelfBlock(BOOKSHELF));
+        ACACIA_BOOKSHELF = REGISTRY.register("acacia_bookshelf", () -> new BookshelfBlock(BOOKSHELF));
+        DARK_OAK_BOOKSHELF = REGISTRY.register("dark_oak_bookshelf", () -> new BookshelfBlock(BOOKSHELF));
+        MANGROVE_BOOKSHELF = REGISTRY.register("mangrove_bookshelf", () -> new BookshelfBlock(BOOKSHELF));
+        CHERRY_BOOKSHELF = REGISTRY.register("cherry_bookshelf", () -> new BookshelfBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1.5F).sound(SoundType.CHERRY_WOOD)));
+        BAMBOO_BOOKSHELF = REGISTRY.register("bamboo_bookshelf", () -> new BookshelfBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1.5F).sound(SoundType.BAMBOO_WOOD)));
+        CRIMSON_BOOKSHELF = REGISTRY.register("crimson_bookshelf", () -> new BookshelfBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1.5F).sound(SoundType.NETHER_WOOD)));
+        WARPED_BOOKSHELF = REGISTRY.register("warped_bookshelf", () -> new BookshelfBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1.5F).sound(SoundType.NETHER_WOOD)));
+        SPRUCE_LADDER = REGISTRY.register("spruce_ladder", () -> new LadderBlock(LADDER));
+        BIRCH_LADDER = REGISTRY.register("birch_ladder", () -> new LadderBlock(LADDER));
+        JUNGLE_LADDER = REGISTRY.register("jungle_ladder", () -> new LadderBlock(LADDER));
+        ACACIA_LADDER = REGISTRY.register("acacia_ladder", () -> new LadderBlock(LADDER));
+        DARK_OAK_LADDER = REGISTRY.register("dark_oak_ladder", () -> new LadderBlock(LADDER));
+        MANGROVE_LADDER = REGISTRY.register("mangrove_ladder", () -> new LadderBlock(LADDER));
+        CHERRY_LADDER = REGISTRY.register("cherry_ladder", () -> new LadderBlock(LADDER));
+        BAMBOO_LADDER = REGISTRY.register("bamboo_ladder", () -> new LadderBlock(LADDER));
+        CRIMSON_LADDER = REGISTRY.register("crimson_ladder", () -> new LadderBlock(LADDER));
+        WARPED_LADDER = REGISTRY.register("warped_ladder", () -> new LadderBlock(LADDER));
+    }
+}

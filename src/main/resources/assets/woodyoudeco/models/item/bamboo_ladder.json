@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "woodyoudeco:block/bamboo_ladder"
+  }
+}

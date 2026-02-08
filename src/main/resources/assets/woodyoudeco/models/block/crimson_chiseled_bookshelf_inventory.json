@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/chiseled_bookshelf_inventory",
+    "textures": {
+        "top": "woodyoudeco:block/crimson_chiseled_bookshelf_top",
+        "side": "woodyoudeco:block/crimson_chiseled_bookshelf_side",
+        "front": "woodyoudeco:block/crimson_chiseled_bookshelf_6",
+        "particle": "#top"
+    }
+}

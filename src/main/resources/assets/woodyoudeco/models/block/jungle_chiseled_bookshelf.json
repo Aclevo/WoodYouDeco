@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/chiseled_bookshelf",
+    "textures": {
+        "top": "woodyoudeco:block/jungle_chiseled_bookshelf_top",
+        "side": "woodyoudeco:block/jungle_chiseled_bookshelf_side",
+        "particle": "#top"
+    }
+}
